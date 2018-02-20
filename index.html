@@ -1,1 +1,328 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Playfair+Display|Nanum+Myeongjo" rel="stylesheet">
+
+
+<style>
+body{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  min-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+.contacts{
+  grid-row: 1;
+  grid-column: 1 / 13;
+  color: white;
+  background-color: black;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.online-contacts {
+  margin-right: 50px;
+}
+.direct-contacts {
+  margin-left: 50px
+}
+.contacts ul{
+  list-style: none;
+  display: inline;
+}
+.contacts li{
+  display: inline;
+}
+.brand{
+  color: white;
+  grid-row: 2;
+  grid-column: 1 / 5;
+  background-color: transparent;
+  z-index: 5;
+}
+.brand h3 {
+  padding: 20 0 0 43;
+  margin: 0;
+  font-size: 10px;
+  font-weight: none;
+  text-transform: uppercase;
+  font-family: roboto;
+  width: 200;
+}
+.brand h1 {
+  padding: 0 0 0 27;
+  margin: 0;
+  font-size: 36px;
+  font-weight: none;
+  text-transform: uppercase;
+}
+.menu {
+  font-family: roboto;
+  margin: 30 50 0 0;
+  text-align: right;
+  grid-row: 2;
+  grid-column: 2 / 13;
+  background-color: transparent;
+  color: white;
+  z-index: 10;
+}
+.menu a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0 0 18;
+}
+.menu a:hover {
+  color: orange;
+}
+.menu ul{
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.menu li{
+  display: inline;
+}
+.banner{
+  grid-row: 2;
+  grid-column: 1 / 13;
+}
+.banner img{
+  opacity: 1;
+  width: 100%;
+}
+.banner-text{
+  color: white;
+  grid-row: 2;
+  position: absolute;
+  z-index: 5;
+  padding-top: 100px;
+  padding-left: 100px;
+  font-family: "Nanum Myeongjo";
+}
+.banner-text h1{
+  font-size: 2.5em;
+  padding-top: 120px;
+}
+.banner-text h3{
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+.banner-text p{
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+.award-message{
+  grid-row: 3;
+  grid-column: 1 / 8;
+  background-color: grey;
+}
+.award1{
+  text-align: center;
+  grid-row: 3;
+  grid-column: 8 / 9;
+  background-color: grey;
+}
+.award2{
+  text-align: center;
+  grid-row: 3;
+  grid-column: 9 / 10;
+  background-color: grey;
+}
+.award3{
+  text-align: center;
+  grid-row: 3;
+  grid-column: 10 / 11;
+  background-color: grey;
+}
+.award4{
+  text-align: center;
+  grid-row: 3;
+  grid-column: 11 / 12;
+  background-color: grey;
+}
+.red-wine{
+  grid-row: 4;
+  grid-column: 1 / span 3;
+  background-color: red;
+  height: 200px;
+}
+.white-wine{
+  grid-row: 4;
+  grid-column: 4 / span 3;
+  background-color: orange;
+    height: 200px;
+}
+.rose-wine{
+  grid-row: 4;
+  grid-column: 7 / span 3;
+  background-color: pink;
+    height: 200px;
+}
+.dishes{
+  grid-row: 4;
+  grid-column: 10 / span 3;
+  background-color: blue;
+    height: 200px;
+}
+.red-wine img{
+  height: 100%;
+  width:  100%;
+}
+.white-wine img{
+}
+.rose-wine img{
+}
+.dishes img{
+}
+.shortlist{
+  grid-row: 5 / 6;
+  background-color: purple;
+}
+article{
+  grid-row: 6 / 7;
+  background-color: darkorange;
+}
+.details ul{
+  list-style: none;
+}
+</style>
+<html>
+  <head>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta charset="utf-8">
+    <title>Winery</title>
+  </head>
+  <body>
+    <div class="wrapper">
+              <div class="contacts">
+                  <ul class="direct-contacts">
+                      <li><i class="fas fa-map-marker"></i></li>
+                      <li>6087 Richmond Hwy, Alexandria, VA</li>
+                  </ul>
+                  <ul>
+                      <li><i class="fas fa-phone"></i></li>
+                      <li>703 329 0632</li>
+                  </ul>
+                  <ul>
+                      <li><i class="fas fa-clock"></i></li>
+                      <li>Mo-Fr 11:00-00:00, Sa-Su 15:00-23:00</li>
+                  </ul>
+                  <ul class="online-contacts">
+                      <li><i class="fab fa-facebook-f"></i></li>
+                      <li><i class="fab fa-twitter"></i></li>
+                      <li><i class="fab fa-linkedin-in"></i></li>
+                      <li><i class="fab fa-google-plus-g"></i></li>
+                  </ul>
+              </div>
+              <div class="brand">
+                <h3>winery & restaurant</h3>
+                <h1>Jorden</h1>
+              </div>
+              <div class="menu">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">wine selection</a></li>
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="#">reservation</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">more</a></li>
+                </ul>
+              </div>
+              <div class="banner">
+                <img src="https://s17.postimg.org/algskjv9b/tuscany.jpg">
+              </div>
+              <div class="banner-text">
+                    <h1>A sunlit vineyard, where <br>the future wine grows...</h1>
+                    <h3>This is what our winery looks like.</h3>
+                    <p>And after we make the wine, the wine restaurant takes the lead!</p>
+                    <form class="book_online">
+                        <input type="button" name="book-online" value="BOOK ONLINE">
+                    </form>
+              </div>
+              <div class="award-message">
+                    <h1>over all those years</h1>
+                    <p>Our sommelier's expertise has been awarded with more than a handful of awards</p>
+              </div>
+              <div class="award1">
+                  <img src="https://s17.postimg.org/bszs9ker3/jop40.png">
+                  <h4>Judgement of Paris</h4>
+                  <img src="https://s17.postimg.org/j8z1vlfdr/1450-256x256x32.png">
+                  <p>2014</p>
+              </div>
+              <div class="award2">
+                  <img src="https://s17.postimg.org/bszs9ker3/jop40.png">
+                  <h4>Great Chardonnay</h4>
+                  <img src="https://s17.postimg.org/j8z1vlfdr/1450-256x256x32.png">
+                  <p>2014</p>
+              </div>
+              <div class="award3">
+                  <img src="https://s17.postimg.org/bszs9ker3/jop40.png">
+                  <h4>Michelin Guide</h4>
+                  <img src="https://s17.postimg.org/j8z1vlfdr/1450-256x256x32.png">
+                  <p>2015</p>
+              </div>
+              <div class="award4">
+                  <img src="https://s17.postimg.org/bszs9ker3/jop40.png">
+                  <h4>La Liste</h4>
+                  <img src="https://s17.postimg.org/j8z1vlfdr/1450-256x256x32.png">
+                  <p>2016</p>
+              </div>
+              <div class="red-wine">
+                  <img src="https://s17.postimg.org/pvqb2sp3j/Red_Wine.jpg">
+                  <h1>red wines</h1>
+              </div>
+              <div class="white-wine">
+                  <img src="https://s17.postimg.org/rc1tkfzkv/white-wine.jpg">
+                  <h1>white wines</h1>
+              </div>
+              <div class="rose-wine">
+                  <img src="https://s17.postimg.org/didgvk71b/vinho-rose.jpg">
+                  <h1>rose wines</h1>
+              </div>
+              <div class="dishes">
+                  <img src="https://s17.postimg.org/x084bl3zz/Food-and-wine-kranjska-klobasa.jpg">
+                  <h1>accompanying dishes</h1>
+              </div>
+              <div class="shortlist">
+                <h1>the best wine shortlist</h1>
+              </div>
+        <article>
+            <h1>read what our clients think after tasting our wines</h1>
+            <p>cillum sunt quem irure sunt velit tempor minim veniam tamen cillum export tamen
+              legam export culpa quem duis sint cillum quorum multos illum amet cillum minim
+              quid tempor enim noster quem amet dolor enim veniam illum enim aliqua sunt quid</p>
+        </article>
+    </div>
+    <div class="details">
+      <div>
+        <h3>winery & restaurant</h3>
+        <h1>Jorden</h1>
+        <p>labore fore duis multos nulla dolor quis esse quorum export eram irure multos
+          illum culpa fugiat fore minim minim amet quae elit dolor illum ipsum malis enim
+          ipsum dolore irure malis nisi magna culpa multos noster culpa quem legam anim
+          elit export veniam minim amet illum culpa noster eram dolore sunt quem minim
+          multos quorum quem dolore anim quem culpa</p>
+      </div>
+      <div>
+        <h2>Contacts</h2>
+        <ul class="direct-contacts">
+            <li><i class="fas fa-map-marker"></i> 6087 Richmond Hwy, Alexandria, VA</li>
+            <li><i class="fas fa-phone"></i> 703 329 0632</li>
+            <li><i class="fas fa-clock"></i> Mo-Fr 11:00-00:00, Sa-Su 15:00-23:00</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>
